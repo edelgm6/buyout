@@ -1,88 +1,41 @@
 import Head from 'next/head'
+import Definition from '../components/definition'
 import { Container, Row, Card, Button } from 'react-bootstrap'
 
 export default function Home() {
   return (
     <Container className="md-container">
       <Head>
-        <title>ReactJS with react-bootstrap</title>
-        <link rel="icon" href="/favicon-32x32.png" />
+        <title>Buyout</title>
       </Head>
       <Container>
-        <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h2>
+          Let's do a leveraged buyout!
+        </h2>
         <p>
-          Get started by editing <code>pages/index.js</code>
+          But first, some definitions. Before we proceed, it's important to note that in each case we aren't talking about 'book value' but <i>market value</i>. The importance of this will make itself plain later.
         </p>
+          <Definition
+            title = "Equity"
+            body = {[<strong>Equity</strong>, " is the market value of the outstanding shares, often called the 'market capitalization' (or market cap for short!). Equity holders typically have voting rights, may get a dividend, and will see their value fluctuate with the business. If the firm goes bankrupt, the equity holders are the last to be made whole."]}
+          />
+          <Definition
+            title = "Liabilities"
+            body = {[<strong>Liabilities</strong>, " represents the market value of any outstanding debt of the firm (e.g., bank loans, bonds, etc.). of a firm. Banks and bondholders are typically paid back in interest and principal. Outside of special circumstances like convertible bonds, liabilities' value doesn't change with the fortunes of the firm unless there is a bankruptcy."]}
+          />
+          <Definition
+            title = "Assets"
+            body = {[<strong>Assets</strong>, " is the value of the firm's holdings and operations. This is where ", <strong>the common understanding of these terms and the financial understanding can differ.</strong>, "In common speech, we think of assets as stuff you own: money in the bank, your house, the car in your garage. But in financial terms we think of assets not just as stuff but also as present value. In the case of a household, the total assets would be not just the stuff, but also the ", <strong>present value of future income.</strong>, "Similarly, the assets of the business is not just its office buildings and factories and cash balance, but also the present value of its future cash flows."]}
+          />
+          <Definition
+            title = "Enterprise Value"
+            body = {["The ", <strong>enterprise value</strong>, " of a firm represents the ", <strong>present value</strong>, " of the firm's assets."]}
+          />
         <Container>
-          <Row className="justify-content-md-between">
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Documentation</Card.Title>
-                <Card.Text>
-                  Find in-depth information about Next.js features and API.
-                </Card.Text>
-                <Button variant="primary" href="https://nextjs.org/docs">
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Learn</Card.Title>
-                <Card.Text>
-                  Learn about Next.js in an interactive course with quizzes!
-                </Card.Text>
-                <Button variant="primary" href="https://nextjs.org/learn">
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-          </Row>
-          <Row className="justify-content-md-between">
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Examples</Card.Title>
-                <Card.Text>
-                  Discover and deploy boilerplate example Next.js projects.
-                </Card.Text>
-                <Button
-                  variant="primary"
-                  href="https://github.com/vercel/next.js/tree/master/examples"
-                >
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Deploy</Card.Title>
-                <Card.Text>
-                  Instantly deploy your Next.js site to a public URL with
-                  Vercel.
-                </Card.Text>
-                <Button
-                  variant="primary"
-                  href="https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=example&utm_campaign=next-example"
-                >
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-          </Row>
         </Container>
       </Container>
 
       <footer className="cntr-footer">
-        <a
-          href="https://vercel.com?filter=next.js&utm_source=github&utm_medium=example&utm_campaign=next-example"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="sml-logo" />
-        </a>
       </footer>
     </Container>
   )
