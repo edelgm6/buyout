@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Definition from '../components/definition'
-import { Container, Row, Card, Button } from 'react-bootstrap'
+import Navigation from '../components/navigation'
+import { Container, Row, Card, Button, Navbar, Nav, NavDropdown, Form, FormControl } from 'react-bootstrap'
 
 export default function Home() {
   return (
@@ -8,6 +9,9 @@ export default function Home() {
       <Head>
         <title>Buyout</title>
       </Head>
+
+      <Navigation/>
+
       <Container>
         <h2>
           Let's do a leveraged buyout!
@@ -47,7 +51,7 @@ export default function Home() {
 
                 <p>To illustrate, imagine you are going to buy a house. On Zillow, the house the house is estimated to be worth $300,000. However, in the listing it mentions that the house comes with $100,000 in cash in a box in the basement.</p>
 
-                <p>The <strong>Assets</strong> of the house is $400,000. The Enterprise Value of the house is $300,000. As a buyer, you are indifferent from paying $400,000 and keeping the money in the basement or if the seller takes the money with them and you only pay $300,000. It's the same if you're buying a business.</p>
+                <p>The <strong>Assets</strong> of the house is $400,000. The <strong>Enterprise Value</strong> of the house is $300,000. As a buyer, <strong>you are indifferent</strong> from paying $400,000 and keeping the money in the basement or if the seller takes the money with them and you only pay $300,000. It's the same if you're buying a business: the excess cash is irrelevant.</p>
               </div>
             }
           />
