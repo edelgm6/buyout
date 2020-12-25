@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Definition from '../components/definition'
 import Navigation from '../components/navigation'
+import BarChart from '../components/bar-chart'
 import { Container, Row, Card, Button, Navbar, Nav, NavDropdown, Form, FormControl } from 'react-bootstrap'
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
         <title>Buyout</title>
       </Head>
 
-      <Navigation/>
+      <Navigation active_link = "definitions"/>
 
       <Container>
         <h2>
@@ -19,13 +20,16 @@ export default function Home() {
         <p>
           But first, some definitions. Before we proceed, it's important to note that in each case we aren't talking about 'book value' but <i>market value</i>. The importance of this will make itself plain later.
         </p>
+
+          <BarChart/>
+
           <Definition
             title = "Equity"
             body = {[<strong>Equity</strong>, " is the market value of the outstanding shares, often called the 'market capitalization' (or market cap for short!). Equity holders typically have voting rights, may get a dividend, and will see their value fluctuate with the business. If the firm goes bankrupt, the equity holders are the last to be made whole."]}
           />
           <Definition
             title = "Liabilities"
-            body = {[<strong>Liabilities</strong>, " represents the market value of any outstanding debt of the firm (e.g., bank loans, bonds, etc.). of a firm. Banks and bondholders are typically paid back in interest and principal. Outside of special circumstances like convertible bonds, liabilities' value doesn't change with the fortunes of the firm unless there is a bankruptcy."]}
+            body = {[<strong>Liabilities</strong>, " represents the market value of any outstanding debt (e.g., bank loans, bonds). of a firm. Banks and bondholders are typically paid back in interest and principal. Outside of special circumstances like convertible bonds, liabilities' value doesn't change with the fortunes of the firm unless there is a bankruptcy."]}
           />
           <Definition
             title = "Assets"
@@ -39,7 +43,7 @@ export default function Home() {
               <div>
                 <p><strong>Assets = Liablilities + Stockholder's Equity</strong></p>
                 <p>This can be rewritten (and often more intuitively understood) as Stockholder's Equity = Assets - Liabilities becaus we are typically thinking of ourselves as equity holders.</p>
-                <p>But in a leveraged buyout we aren't buying a few shares of stock. <strong>We're buying the entire asset.</strong></p>
+                <p>But in a leveraged buyout we aren't buying a few shares of stock. <strong>We're buying the entire asset and are indifferent to how those assets are funded.</strong></p>
               </div>
             }
           />
@@ -47,11 +51,12 @@ export default function Home() {
             title = "Enterprise Value"
             body = {
               <div>
-                <p><strong>Enterprise Value</strong> is the assets of the firm less any excess cash on the balance sheet. We subtract the excess cash because we want to understand the value of the core business rather than the value of the excess cash.</p>
+                <p><strong>Enterprise Value = Assets - Excess Cash</strong></p>
+                <p><strong>Enterprise Value</strong> is the assets of the firm less any excess cash on the balance sheet. We subtract the excess cash because we want to understand the value of the core business as a stand-alone asset rather than including value of whatever excess cash happens to be on the balance sheet.</p>
 
                 <p>To illustrate, imagine you are going to buy a house. On Zillow, the house the house is estimated to be worth $300,000. However, in the listing it mentions that the house comes with $100,000 in cash in a box in the basement.</p>
 
-                <p>The <strong>Assets</strong> of the house is $400,000. The <strong>Enterprise Value</strong> of the house is $300,000. As a buyer, <strong>you are indifferent</strong> from paying $400,000 and keeping the money in the basement or if the seller takes the money with them and you only pay $300,000. It's the same if you're buying a business: the excess cash is irrelevant.</p>
+                <p>The <strong>Assets</strong> of the house is $400,000. The <strong>Enterprise Value</strong> of the house is $300,000. As a buyer, <strong>you are indifferent</strong> from paying $400,000 and keeping the money in the basement or payung $300,000 without the money in the basement. It's the same if you're buying a business: the excess cash is irrelevant.</p>
               </div>
             }
           />
