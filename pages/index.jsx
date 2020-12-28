@@ -21,8 +21,6 @@ export default function Home() {
           But first, some definitions. Before we proceed, it's important to note that in each case we aren't talking about 'book value' but <i>market value</i>. The importance of this will make itself plain later.
         </p>
 
-          <BarChart/>
-
           <Definition
             title = "Equity"
             body = {[<strong>Equity</strong>, " is the market value of the outstanding shares, often called the 'market capitalization' (or market cap for short!). Equity holders typically have voting rights, may get a dividend, and will see their value fluctuate with the business. If the firm goes bankrupt, the equity holders are the last to be made whole."]}

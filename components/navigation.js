@@ -9,9 +9,6 @@ export default function Navigation({ active_link }) {
   }
 
   for (var key in active_links) {
-    console.log('wtf');
-    console.log(key);
-    console.log(active_link)
     if (key == active_link) {
         active_links[key] = "active";
     }
