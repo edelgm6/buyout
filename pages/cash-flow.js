@@ -125,7 +125,7 @@ export default function Home() {
         <h5>Why don't we include Taxes and Interest, which are cash expenses?</h5>
         <p>Because, while they are actual cash expenses, they are <strong>dependent on financing!</strong> The current owner of the business might have no debt, they might have a lot of debt, or somewhere in between. Whatever their current capital structure, it's unlikely it will exactly match what we as a buyer might apply. So we exclude them.</p>
 
-        <p>We now have a measure of cash flow that both 1) <i>removes key non-cash expenses</i> and is <i>independent of capital structure</i></p>
+        <p>We now have a measure of cash flow that both 1) <i>removes key non-cash expenses</i> and is 2) <i>independent of capital structure</i></p>
 
         <Container>
         </Container>
