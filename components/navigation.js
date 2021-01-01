@@ -19,7 +19,8 @@ export default function Navigation({ active_link }) {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as="span"><Link href="/"><a>Definitions</a></Link></Nav.Link>
+          <Nav.Link as="span"><Link href="/"><a>Intro</a></Link></Nav.Link>
+          <Nav.Link as="span"><Link href="/capital-structure"><a>Capital Structure</a></Link></Nav.Link>
           <Nav.Link as="span"><Link href="/cash-flow"><a>Cash Flow</a></Link></Nav.Link>
           <Nav.Link as="span"><Link href="/valuation"><a>Valuation</a></Link></Nav.Link>
         </Nav>
