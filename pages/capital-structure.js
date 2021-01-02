@@ -31,11 +31,21 @@ export default function Home() {
         </p>
 
         <p>
-          Does the mortgage balance of the current owner affect the amount you would be willing to buy it for? Clearly not! <strong>Whether they have the home paid off or have a substantial balance, that's the current owner's concern, not yours.</strong>
+          Does the mortgage balance of the current owner affect the amount <i>you</i> would be willing to pay for it? Clearly not! <strong>Whether the current owner has the home paid off or have a substantial balance is immaterial to you.</strong>
         </p>
 
         <p>
-          However, imagine that interest rates ballooned from 3% to 10% (pushing a $400,000 mortgage from ~$1700/month to ~$3500/month). I suspect your willingness to pay would drop (we observe this empirically in the market — home values and mortgage rates are tightly linked).
+          However, imagine that interest rates ballooned from 3% to 10% (pushing a $400,000 mortgage from ~$1700/month to ~$3500/month). I suspect your willingness to pay would drop as the cost of ownership of home goes up (we observe this empirically in the market — home values and mortgage rates are tightly linked).
+        </p>
+
+        <p>
+          I.e., the <i>existing capital structure</i> doesn't affect your valuation on the home, but your <i>potential</i> capital structure does.
+        </p>
+
+        <h5>Parrish Shoe Company</h5>
+
+        <p>
+          When we think about a business, we think about their capital structure in terms of <strong>how the assets of the business are 'funded'</strong>.
         </p>
 
           <Definition

@@ -14,7 +14,7 @@ export default function Navigation({ active_link }) {
     }
   }
 
-  return <Navbar sticky = "top" bg="light" expand="lg">
+  return <div><Navbar sticky = "top" bg="light" expand="lg">
       <Navbar.Brand>Buyout</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -26,4 +26,7 @@ export default function Navigation({ active_link }) {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+    <br></br>
+    </div>
+
 }
