@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Definition from '../components/definition'
 import Navigation from '../components/navigation'
 import BarChart from '../components/bar-chart'
+import PMTForm from '../components/pmt-form'
+import FormExample from '../components/formik-test'
 import Link from 'next/link'
 import { Container, Row, Card, Button, Navbar, Nav, NavDropdown, Form, FormControl } from 'react-bootstrap'
 
@@ -16,6 +18,9 @@ export default function Home() {
 
       <Container>
         <h2>Understanding Capital Structure</h2>
+
+        <PMTForm></PMTForm>
+        <FormExample></FormExample>
 
         <p>
           A critical first principle when we think about buying a business is that <strong>a business's <i>current</i> capital structure and valuation are independent concerns.</strong> However, the <i>potential</i> capital structure is tightly linked to a business's valuation.
